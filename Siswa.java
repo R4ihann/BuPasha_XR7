@@ -4,6 +4,30 @@ public class Siswa {
     String nama;
     double ipk;
 
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNama() {
+        return this.nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public double getIpk() {
+        return this.ipk;
+    }
+
+    public void setIpk(double ipk) {
+        this.ipk = ipk;
+    }
+
     //Constructor
     //nama harus sama dengan Class
     public Siswa(){
@@ -15,8 +39,14 @@ public class Siswa {
     //Constructor Parameter
     public Siswa(int id, String nama, double ipk) {
         //variabel = parameter
+    
         this.id = id;
         this.nama = nama;
         this.ipk = ipk;
+
+    }
+
+    public void print(){
+        
     }
 }
