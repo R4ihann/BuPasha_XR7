@@ -13,9 +13,9 @@ class Driver {
         choice = s.nextLine();
 
         if (choice.equalsIgnoreCase("CD")){
-            cd.CDprint();
+            cd.print();
         }else if (choice.equalsIgnoreCase("DVD")){
-            dvd.DVDprint();
+            dvd.print();
         }
         s.close();
     }

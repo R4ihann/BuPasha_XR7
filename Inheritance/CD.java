@@ -5,7 +5,32 @@ public class CD extends Product {
     int totalSong;
     String label;
 
+    public String getArtist() {
+        return this.artist;
+    }
+
+    public void setArtist(String artist) {
+        this.artist = artist;
+    }
+
+    public int getTotalSong() {
+        return this.totalSong;
+    }
+
+    public void setTotalSong(int totalSong) {
+        this.totalSong = totalSong;
+    }
+
+    public String getLabel() {
+        return this.label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
     public CD(){
+        
         number = 2;
         name="Perayaan Patah Hati";
         quantity=1;
@@ -15,7 +40,16 @@ public class CD extends Product {
         label="Sony Music";
     }
 
-    public void CDprint(){
+    public CD(String artist, int totalSong, String label){
+        this.totalSong = totalSong;
+        this.artist = artist;
+        this.label = label;
+
+    }
+
+    @Override
+    public void print(){
+        super.print();
         System.out.println("Name: "+name);
         System.out.println("Artist: "+artist);
         System.out.println("Songs: "+totalSong);
