@@ -1,0 +1,28 @@
+body{ background-color: rgb(228, 196, 255);
+}
+div.container{
+    margin: 0 auto;
+    width: 90%;
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+}
+nav{
+    width: 20%; 
+    height: 800px;
+    background-color: azure;
+    float: left;
+}
+div.content{
+    width: 80%;
+    height: 800px;
+    background: #fff;
+    float: right;
+}
+footer{
+    width:100%;
+    height: 50px;
+    background: rgb(255, 0, 0);
+}
